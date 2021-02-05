@@ -1,0 +1,8 @@
+node_modules
+npm-debug.log
+build
+.idea
+release-builds
+.node-persist
+*.DS_Store
+*.dmg

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="102px" height="127px" viewBox="0 0 102 127" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="99.1151148%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" stop-opacity="0.5" offset="0%"></stop>
+            <stop stop-color="#858585" stop-opacity="0.5" offset="17.8451849%"></stop>
+            <stop stop-color="#000000" stop-opacity="0.5" offset="100%"></stop>
+        </linearGradient>
+        <radialGradient cx="50%" cy="158.340507%" fx="50%" fy="158.340507%" r="77.3118994%" gradientTransform="translate(0.500000,1.583405),scale(1.000000,0.787709),rotate(-90.000000),scale(1.000000,1.263741),translate(-0.500000,-1.583405)" id="radialGradient-2">
+            <stop stop-color="#FFFFFF" stop-opacity="0.5" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0.5" offset="86.4971319%"></stop>
+            <stop stop-color="#000000" stop-opacity="0.427960824" offset="96.6192161%"></stop>
+            <stop stop-color="#E9E9E9" stop-opacity="0" offset="100%"></stop>
+        </radialGradient>
+        <path d="M0.017239697,10.5 C0.35057303,12.8333333 4.0172397,42.6666667 11.0172397,100 C12.0172397,113.666667 23.5172397,120.333333 45.5172397,120 C67.5172397,119.666667 80.0172397,113.666667 83.0172397,102 C90.350573,43.3333333 94.1839064,12.8333333 94.5172397,10.5 C95.0172397,7 84.7672397,0 47.2672397,0 C9.7672397,7.49474887e-15 -0.482760303,7 0.017239697,10.5 Z" id="path-3"></path>
+        <radialGradient cx="50%" cy="37.017888%" fx="50%" fy="37.017888%" r="86.2707865%" gradientTransform="translate(0.500000,0.370179),scale(1.000000,0.862920),rotate(90.000000),scale(1.000000,0.561457),translate(-0.500000,-0.370179)" id="radialGradient-4">
+            <stop stop-color="#FFFFFF" stop-opacity="0.274881114" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0.323971976" offset="18.9253222%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0.41969968" offset="39.5715665%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </radialGradient>
+        <linearGradient x1="50%" y1="22.3709752%" x2="50%" y2="84.4477689%" id="linearGradient-5">
+            <stop stop-color="#FFFFFF" stop-opacity="0.5" offset="0%"></stop>
+            <stop stop-color="#000000" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <path d="M0,11 C1.66666667,26.6666667 5.33333333,56.5 11,100.5 C12,114.166667 23.5,120.833333 45.5,120.5 C67.5,120.166667 80,114.166667 83,102.5 C89.3333333,52.8333333 93.1666667,22.3333333 94.5,11 C94,15 86.5,23 45.5,24 C4.5,25 0.5,15 0,11 Z" id="path-6"></path>
+        <filter x="-7.4%" y="-4.6%" width="114.8%" height="112.8%" filterUnits="objectBoundingBox" id="filter-7">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Artboard-Copy-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-366.000000, -755.000000)">
+        <g id="Group" transform="translate(370.000000, 755.844137)">
+            <g id="Path-2">
+                <use fill="#CACACA" xlink:href="#path-3"></use>
+                <use fill="url(#linearGradient-1)" xlink:href="#path-3"></use>
+                <use fill="url(#radialGradient-2)" xlink:href="#path-3"></use>
+            </g>
+            <g id="Path-2-Copy">
+                <use fill="black" fill-opacity="1" filter="url(#filter-7)" xlink:href="#path-6"></use>
+                <use fill="url(#radialGradient-4)" fill-rule="evenodd" xlink:href="#path-6"></use>
+                <use fill-opacity="0.25" fill="url(#linearGradient-5)" fill-rule="evenodd" xlink:href="#path-6"></use>
+            </g>
+        </g>
+    </g>
+</svg>
