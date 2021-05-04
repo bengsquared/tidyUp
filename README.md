@@ -1,4 +1,4 @@
-![tidyUp Logo](/tidyUp.icns)
+![tidyUp Logo](https://manilafile.co/static/tidyUpButtons-637a93d06be8588e78694785cca99a5d.png)
 
 # tidyUp
 
