@@ -18,10 +18,10 @@ const CardStack = ({ stack, currentIndex, directionSequence }) => {
       aniVal: i - currentIndex,
       config: { friction: 50, tension: i == currentIndex ? 500 : 200 },
     }));
-    console.log("inUseEffect");
     ipcRenderer.send("closeQL");
 
     Mousetrap.bind("space", onKeyDownHandler, "keydown");
+
     return function cleanup() {
       Mousetrap.unbind("space");
     };

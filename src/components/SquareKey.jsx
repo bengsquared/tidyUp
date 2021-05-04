@@ -9,10 +9,9 @@ import down from "./../images/downarrow.svg";
 import undo from "./../images/undo.png";
 import trash from "./../images/trash.svg";
 
-const SquareKey = ({ button, func, place, dir, wide }) => {
+const SquareKey = ({ button, onPress, wide }) => {
   const [pressed, setPressed] = useState(false);
   let keyname = button;
-  let imgsrc = arrow;
   let r = 0;
   if (
     [
@@ -46,7 +45,7 @@ const SquareKey = ({ button, func, place, dir, wide }) => {
 
   const onKeyDownHandler = (e) => {
     setPressed(true);
-    func(place, dir);
+    onPress();
     e.preventDefault();
   };
 
@@ -68,43 +67,28 @@ const SquareKey = ({ button, func, place, dir, wide }) => {
       Mousetrap.unbind(b);
     };
   });
-
   return (
-    <div className="col-3">
-      {["enter", "return", "del", "backspace"].includes(keyname) ? (
-        <div>
-          <br />
-          <br />
-        </div>
-      ) : (
-        <img
-          src={place == "Trash" ? trash : place == "undo" ? undo : folder}
-          className="button-icon"
-        ></img>
-      )}
-      <h3 className="over">{place}</h3>
-      <button
-        className={
-          (pressed ? "sel-button-down " : "") +
-          (wide ? "sel-button-wide" : "sel-button")
-        }
-        onMouseDown={onKeyDownHandler}
-        onMouseUp={onKeyUpHandler}
-      >
-        <div className={button}>
-          {keyname == "" ? (
-            <img
-              className="buttonimg"
-              alt={place}
-              src={imgsrc}
-              style={{ transform: `rotate(${r}deg)` }}
-            />
-          ) : (
-            keyname
-          )}
-        </div>
-      </button>
-    </div>
+    <button
+      className={
+        (pressed ? "sel-button-down " : "") +
+        (wide ? "sel-button-wide" : "sel-button")
+      }
+      onMouseDown={onKeyDownHandler}
+      onMouseUp={onKeyUpHandler}
+    >
+      <div className={button}>
+        {keyname == "" ? (
+          <img
+            className="buttonimg"
+            alt={button}
+            src={arrow}
+            style={{ transform: `rotate(${r}deg)` }}
+          />
+        ) : (
+          keyname
+        )}
+      </div>
+    </button>
   );
 };
 

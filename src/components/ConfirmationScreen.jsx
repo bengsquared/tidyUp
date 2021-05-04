@@ -83,20 +83,14 @@ const ConfirmationScreen = ({
         </DragDropContext>
       </div>
       <div className="flex items-stretch justify-center">
-        <SquareKey
-          button={"del"}
-          place={"cancel"}
-          func={cancel}
-          wide={true}
-          dir={0}
-        />
-        <SquareKey
-          button={"enter"}
-          place={"confirm"}
-          func={finishUp}
-          wide={true}
-          dir={0}
-        />
+        <div>
+          <SquareKey button={"del"} onPress={cancel} wide={true} />
+          discard sort
+        </div>
+        <div>
+          <SquareKey button={"enter"} onPress={finishUp} wide={true} />
+          confirm
+        </div>
       </div>
     </div>
   );

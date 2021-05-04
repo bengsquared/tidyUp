@@ -183,6 +183,8 @@ const App = () => {
         directionSequence={directionSequence}
         setLocation={setLocation}
         cancel={SaveAndEnd}
+        setPossiblePlaces={setPossiblePlaces}
+        possiblePlaces={possiblePlaces}
       />
     );
   } else if (mode === "sorting" && currentIndex === stack.length) {

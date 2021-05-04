@@ -1,10 +1,11 @@
 import React, { useEffect, useState, useRef } from "react";
 import Mousetrap from "mousetrap";
 import LoadingShuffle from "./LoadingShuffle";
+import SortationLocation from "./SortationLocation";
+
 import folder from ".././images/folder.svg";
 import plusfolder from ".././images/plusfolder.svg";
 import cabinet from ".././images/cabinet.png";
-import SquareKey from "./SquareKey";
 
 const MenuScreen = ({ mode, locations, loadPath, newPath }) => {
   const topFive = locations ? locations.slice(0, 6) : [];
@@ -80,7 +81,7 @@ const MenuScreen = ({ mode, locations, loadPath, newPath }) => {
         {mode === "newSession" ? (
           <h1>Where should we start?</h1>
         ) : (
-          <h1>All done!</h1>
+          <h1>All done! What's next?</h1>
         )}
       </div>
       <div className="gi" style={{ gridArea: "5/3/6/9" }}>
